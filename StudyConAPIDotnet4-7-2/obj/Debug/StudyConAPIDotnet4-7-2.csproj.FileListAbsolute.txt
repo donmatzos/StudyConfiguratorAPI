@@ -1,0 +1,9 @@
+C:\Users\mgirk\RiderProjects\StudyConAPIDotnet4-7-2\StudyConAPIDotnet4-7-2\obj\Debug\StudyConAPIDotnet4-7-2.csprojAssemblyReference.cache
+C:\Users\mgirk\RiderProjects\StudyConAPIDotnet4-7-2\StudyConAPIDotnet4-7-2\obj\Debug\StudyConAPIDotnet4-7-2.csproj.CoreCompileInputs.cache
+C:\Users\mgirk\RiderProjects\StudyConAPIDotnet4-7-2\StudyConAPIDotnet4-7-2\bin\Debug\StudyConAPIDotnet4_7_2.dll
+C:\Users\mgirk\RiderProjects\StudyConAPIDotnet4-7-2\StudyConAPIDotnet4-7-2\bin\Debug\StudyConAPIDotnet4_7_2.pdb
+C:\Users\mgirk\RiderProjects\StudyConAPIDotnet4-7-2\StudyConAPIDotnet4-7-2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mgirk\RiderProjects\StudyConAPIDotnet4-7-2\StudyConAPIDotnet4-7-2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mgirk\RiderProjects\StudyConAPIDotnet4-7-2\StudyConAPIDotnet4-7-2\obj\Debug\StudyConAPIDotnet4-7-2.csproj.CopyComplete
+C:\Users\mgirk\RiderProjects\StudyConAPIDotnet4-7-2\StudyConAPIDotnet4-7-2\obj\Debug\StudyConAPIDotnet4_7_2.dll
+C:\Users\mgirk\RiderProjects\StudyConAPIDotnet4-7-2\StudyConAPIDotnet4-7-2\obj\Debug\StudyConAPIDotnet4_7_2.pdb
