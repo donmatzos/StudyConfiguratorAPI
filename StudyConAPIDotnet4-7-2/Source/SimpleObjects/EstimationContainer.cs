@@ -29,20 +29,5 @@ namespace StudyCon.Source.SimpleObjects
         
         [JsonProperty("value")]
         public double Value { get; set; }
-
-        //TODO - Implement ICollection like https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1?view=net-5.0
-        // public IEnumerator GetEnumerator()
-        // {
-        //     throw new NotImplementedException();
-        // }
-        //
-        // public void CopyTo(Array array, int index)
-        // {
-        //     throw new NotImplementedException();
-        // }
-        //
-        // public int Count { get; }
-        // public bool IsSynchronized { get; }
-        // public object SyncRoot { get; }
     }
 }
