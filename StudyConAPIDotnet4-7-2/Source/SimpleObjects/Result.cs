@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using StudyCon.Source.SimpleObjects;
 using StudyConAPIDotnet4_7_2.Source.Enumeration;
 
 namespace StudyConAPIDotnet4_7_2.Source.SimpleObjects
 {
-    /// <summary>
+   /// <summary>
     /// <c>Result</c> class used to store and evaluate results.
     /// </summary>
     public class Result
@@ -54,6 +53,10 @@ namespace StudyConAPIDotnet4_7_2.Source.SimpleObjects
             return ResultSet.FirstOrDefault(c => c.DegreeCourse.Equals(degreeCourse));
         }
 
+        /// <summary>
+        /// Adds points to a course by utilizing an estimation container.
+        /// </summary>
+        /// <param name="estimationContainer">.</param>
         public void AddPointsToCourse(EstimationContainer estimationContainer)
         {
             foreach (var c in ResultSet.Where(c => c.DegreeCourse == estimationContainer.DegreeCourse))

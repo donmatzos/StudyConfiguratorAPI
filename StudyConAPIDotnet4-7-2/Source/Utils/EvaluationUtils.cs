@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using StudyCon.Source;
-using StudyCon.Source.SimpleObjects;
 using StudyConAPIDotnet4_7_2.Source.SimpleObjects;
 
 namespace StudyConAPIDotnet4_7_2.Source.Utils
 {
-    /// <summary>
+   /// <summary>
     /// Contains static methods to evaluate and compare a tree.
     /// </summary>
     public static class EvaluationUtils
     {
-        private static Random _random = new Random();
+        private static Random _random = new();
         
+        /// <summary>
+        /// Generates an ID consisting of 6 characters and or numbers
+        /// </summary>
+        /// <returns>An ID string</returns>
         public static string GenerateId()
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -48,6 +50,11 @@ namespace StudyConAPIDotnet4_7_2.Source.Utils
             }
         }
         
+        /// <summary>
+        /// Compares two existing trees to each other.
+        /// </summary>
+        /// <param name="persTree">persisting tree</param>
+        /// <param name="cmpTree">compare tree</param>
         public static void CompareTreesAndUpdateValues(StudyConTree persTree, StudyConTree cmpTree)
         {
             foreach (var cmpChild in cmpTree.Root.Children
@@ -75,10 +82,14 @@ namespace StudyConAPIDotnet4_7_2.Source.Utils
         public static void CompareBranchesAndUpdateValues(StudyConNode persisting, StudyConNode cmp)
         {
             if (!persisting.Item.Name.Equals(cmp.Item.Name)) return;
-            foreach (var cmpChild in cmp.Children
-                .Where(cmpChild => !persisting.Children.Contains(cmpChild)))
+            foreach (var cmpChild in cmp.Children)
+                // .Where(cmpChild => !persisting.Children.Contains(cmpChild)))
             {
-                persisting.Children.Add(cmpChild);
+                var cmpTree = new StudyConTree(persisting);
+                if (cmpTree.GetByName(cmpChild.Item.Name) == null)
+                {
+                    persisting.Children.Add(cmpChild);
+                }
             }
             UpdateDegreeCourseValues(persisting, cmp);
             foreach (var persChild in persisting.Children)
@@ -99,10 +110,13 @@ namespace StudyConAPIDotnet4_7_2.Source.Utils
         private static void CompareL2NodeAndChildren(StudyConNode persisting, StudyConNode cmp)
         {
             if (!persisting.Item.Name.Equals(cmp.Item.Name)) return;
-            foreach (var cmpChild in cmp.Children
-                .Where(cmpChild => !persisting.Children.Contains(cmpChild)))
+            foreach (var cmpChild in cmp.Children)
             {
-                persisting.Children.Add(cmpChild);
+                var cmpTree = new StudyConTree(persisting);
+                if (cmpTree.GetByName(cmpChild.Item.Name) == null)
+                {
+                    persisting.Children.Add(cmpChild);
+                }
             }
             UpdateDegreeCourseValues(persisting, cmp);
             foreach (var persChild in persisting.Children)
@@ -127,7 +141,7 @@ namespace StudyConAPIDotnet4_7_2.Source.Utils
                 if (persisting.Item.ContainsDegreeCourse(cmpContainer.DegreeCourse))
                 {
                     persisting.Item.GetContainerByDegreeCourse(cmpContainer.DegreeCourse).Value = 
-                        Math.Max(persisting.Item.GetContainerByDegreeCourse(cmpContainer.DegreeCourse).Value, cmpContainer.Value);;
+                        Math.Max(persisting.Item.GetContainerByDegreeCourse(cmpContainer.DegreeCourse).Value, cmpContainer.Value);
                 }
                 else
                 {
@@ -135,8 +149,8 @@ namespace StudyConAPIDotnet4_7_2.Source.Utils
                 }
             }
         }
-        
-         /// <summary>
+
+        /// <summary>
         /// Adds a list of child nodes to a persisting list of child nodes.
         /// If a duplicate node is encountered, the degree course values are updated.
         /// </summary>
@@ -156,6 +170,25 @@ namespace StudyConAPIDotnet4_7_2.Source.Utils
             return first.GroupBy(node => node.Item.Name)
                 .Select(x => x.First())
                 .ToList();
+        }
+
+        /// <summary>
+        /// Merges two trees.
+        /// </summary>
+        /// <param name="first">first tree to merge</param>
+        /// <param name="second">second tree to merge</param>
+        /// <returns>A merged tree without duplicate nodes</returns>
+        public static StudyConTree MergeTrees(StudyConTree first, StudyConTree second)
+        {
+            foreach (var firstChild in first.Root.Children)
+            {
+                foreach (var secondChild in second.Root.Children
+                    .Where(secondChild => firstChild.Item.Name.Equals(secondChild.Item.Name)))
+                {
+                    CompareBranchesAndUpdateValues(firstChild, secondChild);
+                }
+            }
+            return first;
         }
     }
 }

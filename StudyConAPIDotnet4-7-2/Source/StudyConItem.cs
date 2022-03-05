@@ -2,8 +2,8 @@
 using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using StudyCon.Source.SimpleObjects;
 using StudyConAPIDotnet4_7_2.Source.Enumeration;
+using StudyConAPIDotnet4_7_2.Source.SimpleObjects;
 using StudyConAPIDotnet4_7_2.Source.Utils;
 
 namespace StudyConAPIDotnet4_7_2.Source

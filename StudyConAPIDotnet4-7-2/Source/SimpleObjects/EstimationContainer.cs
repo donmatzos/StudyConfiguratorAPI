@@ -1,16 +1,19 @@
-﻿using System;
-using System.Collections;
-using System.Diagnostics.CodeAnalysis;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using StudyConAPIDotnet4_7_2.Source.Enumeration;
 
-namespace StudyCon.Source.SimpleObjects
+namespace StudyConAPIDotnet4_7_2.Source.SimpleObjects
 {
     /// <summary>
     /// <c>EstimationContainer</c> used to store a degree course and corresponding values.
     /// </summary>
-    public class EstimationContainer// : ICollection
+    public class EstimationContainer
     {
+        [JsonProperty("degreeCourse")]
+        public EnumDegreeCourse DegreeCourse { get; set; }
+        
+        [JsonProperty("value")]
+        public double Value { get; set; }
+        
         [JsonConstructor]
         public EstimationContainer(EnumDegreeCourse degreeCourse, double value)
         {
@@ -23,11 +26,5 @@ namespace StudyCon.Source.SimpleObjects
             DegreeCourse = degreeCourse;
             Value = 0;
         }
-        
-        [JsonProperty("degreeCourse")]
-        public EnumDegreeCourse DegreeCourse { get; set; }
-        
-        [JsonProperty("value")]
-        public double Value { get; set; }
     }
 }

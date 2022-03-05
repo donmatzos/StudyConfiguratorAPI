@@ -233,15 +233,6 @@ namespace StudyConAPIDotnet4_7_2.Source
         }
 
         /// <summary>
-        /// Checks if the trees root has children.
-        /// </summary>
-        /// <returns>True if the root hast children.</returns>
-        public bool RootHasChildren()
-        {
-            return Root.HasChildren();
-        }
-        
-        /// <summary>
         /// Adds level one <c>StudyConNode</c>s.
         /// </summary>
         /// <param name="node">The <c>StudyConNode</c> which should be added.</param>
@@ -402,6 +393,9 @@ namespace StudyConAPIDotnet4_7_2.Source
             }
         }
         
+        /// <summary>
+        /// Creates a Set with all IDs of all the trees nodes.
+        /// </summary>
         private void CreateIdSet()
         {
             if (!Root.HasChildren()) return;
@@ -421,12 +415,13 @@ namespace StudyConAPIDotnet4_7_2.Source
             }
         }
 
+        /// <summary>
+        /// Handles the creation of an ID fpr a node
+        /// </summary>
+        /// <param name="child">node to which an id should be added</param>
         private void HandleChildrenIdCreation(StudyConNode child)
         {
-            if (child.Item.Id == null)
-            {
-                child.Item.Id = EvaluationUtils.GenerateId();
-            }
+            child.Item.Id ??= EvaluationUtils.GenerateId();
             if (!IdSet.Contains(child.Item.Id))
             {
                 IdSet.Add(child.Item.Id);
