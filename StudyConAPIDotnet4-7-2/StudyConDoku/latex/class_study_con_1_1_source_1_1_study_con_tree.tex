@@ -1,0 +1,341 @@
+\hypertarget{class_study_con_1_1_source_1_1_study_con_tree}{}\doxysection{Study\+Con.\+Source.\+Study\+Con\+Tree Class Reference}
+\label{class_study_con_1_1_source_1_1_study_con_tree}\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+
+
+The main {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}} class. Contains all methods to navigate and adapt the tree.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_adf657eb505f838045490e79b060894a1}\label{class_study_con_1_1_source_1_1_study_con_tree_adf657eb505f838045490e79b060894a1}} 
+{\bfseries Study\+Con\+Tree} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} root)
+\item 
+\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_adfeef4a7546d762e5b8252f882fa7446}{Get\+By\+Id}} (string id)
+\begin{DoxyCompactList}\small\item\em Gets a {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by its ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_ad191ed4cda85cbc651d574236602d7cf}{Get\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Gets a {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by its name. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_af0f530093b77115d1adc5c83252a41dd}{Get\+Level\+Three\+By\+Level\+One\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Gets all the level three items of a level one category by its name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a1670401346ef3913df3ef7f8befd428c}{Delete\+By\+Id}} (string id)
+\begin{DoxyCompactList}\small\item\em Deletes a {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_aa5308d6f730dff64c6a2c93bd09e8987}{Delete\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Deletes a {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by its name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a71c31e25a8b316bc0b47358931b06731}{Add\+Level\+One}} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} node)
+\begin{DoxyCompactList}\small\item\em Adds level one {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_aa398e54ebcc379b65fdc8f54f3832311}{Add\+To\+Parent\+By\+Id}} (string id, \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} node)
+\begin{DoxyCompactList}\small\item\em Adds a child to a parent {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by the parents ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a39427ef4a772bb34810c8808f789d88c}{Add\+To\+Parent\+By\+Name}} (string parent\+Name, \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} node)
+\begin{DoxyCompactList}\small\item\em Adds a child to a parent {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by the parents name. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a3789348d49ea457425452077f1f68127}{Load\+Level\+One\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Loads all level one {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a43051143e308fd4efb999bcbe187f7e7}{Load\+Level\+Two\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Loads all level two {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_aa914c9b4c1141861febb383c93cad932}{Load\+Level\+Three\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Loads all level three {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a605ed1033c4e03c83f4e9aa396ff3bbb}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em To\+String method. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a66c31029c7b6a7cbea92dafc035747bb}{To\+Json}} ()
+\begin{DoxyCompactList}\small\item\em To\+Json method \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a38b404a1ebf09bf2059fe96658144341}{Parse\+From\+Json\+String}} (string json\+String)
+\begin{DoxyCompactList}\small\item\em Parses a json string to create the represented {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a29d94c36f8d39d0e765c094eb7425cff}{Parse\+From\+Json\+File\+Path}} (string file\+Path)
+\begin{DoxyCompactList}\small\item\em Parses a json file to create the represented {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_aff1329f55f59b01885b8bea278c9b197}\label{class_study_con_1_1_source_1_1_study_con_tree_aff1329f55f59b01885b8bea278c9b197}} 
+\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} {\bfseries Root}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a12a2725996d8fd9aa18363e39637dd95}\label{class_study_con_1_1_source_1_1_study_con_tree_a12a2725996d8fd9aa18363e39637dd95}} 
+Hash\+Set$<$ string $>$ {\bfseries Id\+Set}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a9b728c5f59a5f02de62b58362622000f}\label{class_study_con_1_1_source_1_1_study_con_tree_a9b728c5f59a5f02de62b58362622000f}} 
+void {\bfseries Update\+Siblings} ()
+\begin{DoxyCompactList}\small\item\em Updates all {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s siblings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a82e72b9f17e83b62d1f1142405d91299}\label{class_study_con_1_1_source_1_1_study_con_tree_a82e72b9f17e83b62d1f1142405d91299}} 
+void {\bfseries Update\+Parent} ()
+\begin{DoxyCompactList}\small\item\em Updates all {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s parents. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a3e02ca776e667a2eaa57264b772a3e27}\label{class_study_con_1_1_source_1_1_study_con_tree_a3e02ca776e667a2eaa57264b772a3e27}} 
+void {\bfseries Create\+Id\+Set} ()
+\begin{DoxyCompactList}\small\item\em Creates a Set with all IDs of all the trees nodes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree_a2deda0571febf8faaddadc3904548bd2}{Handle\+Children\+Id\+Creation}} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} child)
+\begin{DoxyCompactList}\small\item\em Handles the creation of an ID fpr a node \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}} class. Contains all methods to navigate and adapt the tree. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a71c31e25a8b316bc0b47358931b06731}\label{class_study_con_1_1_source_1_1_study_con_tree_a71c31e25a8b316bc0b47358931b06731}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!AddLevelOne@{AddLevelOne}}
+\index{AddLevelOne@{AddLevelOne}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{AddLevelOne()}{AddLevelOne()}}
+{\footnotesize\ttfamily void Study\+Con.\+Source.\+Study\+Con\+Tree.\+Add\+Level\+One (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{node }\end{DoxyParamCaption})}
+
+
+
+Adds level one {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} which should be added.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_aa398e54ebcc379b65fdc8f54f3832311}\label{class_study_con_1_1_source_1_1_study_con_tree_aa398e54ebcc379b65fdc8f54f3832311}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!AddToParentById@{AddToParentById}}
+\index{AddToParentById@{AddToParentById}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{AddToParentById()}{AddToParentById()}}
+{\footnotesize\ttfamily bool Study\+Con.\+Source.\+Study\+Con\+Tree.\+Add\+To\+Parent\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{node }\end{DoxyParamCaption})}
+
+
+
+Adds a child to a parent {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by the parents ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The parents ID.\\
+\hline
+{\em node} & The child {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} which should be added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if the {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} has been added.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a39427ef4a772bb34810c8808f789d88c}\label{class_study_con_1_1_source_1_1_study_con_tree_a39427ef4a772bb34810c8808f789d88c}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!AddToParentByName@{AddToParentByName}}
+\index{AddToParentByName@{AddToParentByName}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{AddToParentByName()}{AddToParentByName()}}
+{\footnotesize\ttfamily bool Study\+Con.\+Source.\+Study\+Con\+Tree.\+Add\+To\+Parent\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{parent\+Name,  }\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{node }\end{DoxyParamCaption})}
+
+
+
+Adds a child to a parent {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by the parents name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+Name} & The parents name.\\
+\hline
+{\em node} & The child {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} which should be added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if the {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} has been added.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a1670401346ef3913df3ef7f8befd428c}\label{class_study_con_1_1_source_1_1_study_con_tree_a1670401346ef3913df3ef7f8befd428c}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!DeleteById@{DeleteById}}
+\index{DeleteById@{DeleteById}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{DeleteById()}{DeleteById()}}
+{\footnotesize\ttfamily bool Study\+Con.\+Source.\+Study\+Con\+Tree.\+Delete\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes a {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s ID.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} was deleted.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_aa5308d6f730dff64c6a2c93bd09e8987}\label{class_study_con_1_1_source_1_1_study_con_tree_aa5308d6f730dff64c6a2c93bd09e8987}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!DeleteByName@{DeleteByName}}
+\index{DeleteByName@{DeleteByName}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{DeleteByName()}{DeleteByName()}}
+{\footnotesize\ttfamily bool Study\+Con.\+Source.\+Study\+Con\+Tree.\+Delete\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Deletes a {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by its name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, if the {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} was deleted.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_adfeef4a7546d762e5b8252f882fa7446}\label{class_study_con_1_1_source_1_1_study_con_tree_adfeef4a7546d762e5b8252f882fa7446}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!GetById@{GetById}}
+\index{GetById@{GetById}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{GetById()}{GetById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} Study\+Con.\+Source.\+Study\+Con\+Tree.\+Get\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets a {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_ad191ed4cda85cbc651d574236602d7cf}\label{class_study_con_1_1_source_1_1_study_con_tree_ad191ed4cda85cbc651d574236602d7cf}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!GetByName@{GetByName}}
+\index{GetByName@{GetByName}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{GetByName()}{GetByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} Study\+Con.\+Source.\+Study\+Con\+Tree.\+Get\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Gets a {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} by its name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_af0f530093b77115d1adc5c83252a41dd}\label{class_study_con_1_1_source_1_1_study_con_tree_af0f530093b77115d1adc5c83252a41dd}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!GetLevelThreeByLevelOneName@{GetLevelThreeByLevelOneName}}
+\index{GetLevelThreeByLevelOneName@{GetLevelThreeByLevelOneName}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{GetLevelThreeByLevelOneName()}{GetLevelThreeByLevelOneName()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ Study\+Con.\+Source.\+Study\+Con\+Tree.\+Get\+Level\+Three\+By\+Level\+One\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Gets all the level three items of a level one category by its name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the L1 {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list that contains all the requested L3 {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a2deda0571febf8faaddadc3904548bd2}\label{class_study_con_1_1_source_1_1_study_con_tree_a2deda0571febf8faaddadc3904548bd2}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!HandleChildrenIdCreation@{HandleChildrenIdCreation}}
+\index{HandleChildrenIdCreation@{HandleChildrenIdCreation}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{HandleChildrenIdCreation()}{HandleChildrenIdCreation()}}
+{\footnotesize\ttfamily void Study\+Con.\+Source.\+Study\+Con\+Tree.\+Handle\+Children\+Id\+Creation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the creation of an ID fpr a node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & node to which an id should be added\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a3789348d49ea457425452077f1f68127}\label{class_study_con_1_1_source_1_1_study_con_tree_a3789348d49ea457425452077f1f68127}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!LoadLevelOneNodes@{LoadLevelOneNodes}}
+\index{LoadLevelOneNodes@{LoadLevelOneNodes}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{LoadLevelOneNodes()}{LoadLevelOneNodes()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ Study\+Con.\+Source.\+Study\+Con\+Tree.\+Load\+Level\+One\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads all level one {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s. 
+
+\begin{DoxyReturn}{Returns}
+A list filled with all level one {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_aa914c9b4c1141861febb383c93cad932}\label{class_study_con_1_1_source_1_1_study_con_tree_aa914c9b4c1141861febb383c93cad932}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!LoadLevelThreeNodes@{LoadLevelThreeNodes}}
+\index{LoadLevelThreeNodes@{LoadLevelThreeNodes}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{LoadLevelThreeNodes()}{LoadLevelThreeNodes()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ Study\+Con.\+Source.\+Study\+Con\+Tree.\+Load\+Level\+Three\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads all level three {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s. 
+
+\begin{DoxyReturn}{Returns}
+A list filled with all level three {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a43051143e308fd4efb999bcbe187f7e7}\label{class_study_con_1_1_source_1_1_study_con_tree_a43051143e308fd4efb999bcbe187f7e7}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!LoadLevelTwoNodes@{LoadLevelTwoNodes}}
+\index{LoadLevelTwoNodes@{LoadLevelTwoNodes}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{LoadLevelTwoNodes()}{LoadLevelTwoNodes()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ Study\+Con.\+Source.\+Study\+Con\+Tree.\+Load\+Level\+Two\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads all level two {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s. 
+
+\begin{DoxyReturn}{Returns}
+A list filled with all level two {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a29d94c36f8d39d0e765c094eb7425cff}\label{class_study_con_1_1_source_1_1_study_con_tree_a29d94c36f8d39d0e765c094eb7425cff}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!ParseFromJsonFilePath@{ParseFromJsonFilePath}}
+\index{ParseFromJsonFilePath@{ParseFromJsonFilePath}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{ParseFromJsonFilePath()}{ParseFromJsonFilePath()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} Study\+Con.\+Source.\+Study\+Con\+Tree.\+Parse\+From\+Json\+File\+Path (\begin{DoxyParamCaption}\item[{string}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parses a json file to create the represented {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Path to the json file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A tree with the information provided in the json file
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a38b404a1ebf09bf2059fe96658144341}\label{class_study_con_1_1_source_1_1_study_con_tree_a38b404a1ebf09bf2059fe96658144341}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!ParseFromJsonString@{ParseFromJsonString}}
+\index{ParseFromJsonString@{ParseFromJsonString}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{ParseFromJsonString()}{ParseFromJsonString()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} Study\+Con.\+Source.\+Study\+Con\+Tree.\+Parse\+From\+Json\+String (\begin{DoxyParamCaption}\item[{string}]{json\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parses a json string to create the represented {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+String} & Json string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A tree with the information provided in the json string
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a66c31029c7b6a7cbea92dafc035747bb}\label{class_study_con_1_1_source_1_1_study_con_tree_a66c31029c7b6a7cbea92dafc035747bb}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!ToJson@{ToJson}}
+\index{ToJson@{ToJson}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{ToJson()}{ToJson()}}
+{\footnotesize\ttfamily string Study\+Con.\+Source.\+Study\+Con\+Tree.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+To\+Json method 
+
+\begin{DoxyReturn}{Returns}
+A json string representing the {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_study_con_tree_a605ed1033c4e03c83f4e9aa396ff3bbb}\label{class_study_con_1_1_source_1_1_study_con_tree_a605ed1033c4e03c83f4e9aa396ff3bbb}} 
+\index{StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}!ToString@{ToString}}
+\index{ToString@{ToString}!StudyCon.Source.StudyConTree@{StudyCon.Source.StudyConTree}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Study\+Con.\+Source.\+Study\+Con\+Tree.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+To\+String method. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the tree.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/mgirk/\+One\+Drive/\+Dokumente/\+Hagenberg/\+Semester\+\_\+4/\+PRO/p05/\+Implementation/\+Tree/\+Study\+Con\+\_\+\+Repo/\+Study\+Con/\+Source/Study\+Con\+Tree.\+cs\end{DoxyCompactItemize}

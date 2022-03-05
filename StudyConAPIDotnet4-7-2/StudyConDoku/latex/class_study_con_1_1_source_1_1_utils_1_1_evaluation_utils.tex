@@ -1,0 +1,201 @@
+\hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils}{}\doxysection{Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils Class Reference}
+\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils}\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+
+
+Contains static methods to evaluate and compare a tree.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a6823ba6ef1d261da8dd5cf2050d2c35e}{Generate\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Generates an ID consisting of 6 characters and or numbers \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_study_con_1_1_source_1_1_simple_objects_1_1_result}{Result}} \mbox{\hyperlink{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a56d6b4d0299cf2b947d9fb811bca145c}{Evaluate\+Tree}} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} tree)
+\begin{DoxyCompactList}\small\item\em Evaluates a tree and returns a result. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a7786407efe199d2fc5fa9ed98e82e9e8}{Compare\+Trees\+And\+Update\+Values}} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} pers\+Tree, \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} cmp\+Tree)
+\begin{DoxyCompactList}\small\item\em Compares two existing trees to each other. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_aeb4784e54c5f307892f0ded30c8c8fa7}{Compare\+Branches\+And\+Update\+Values}} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} persisting, \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} cmp)
+\begin{DoxyCompactList}\small\item\em Compares two existing branches to each other. The branches names have to be equal. The full branch, from L1 over L2 to L3 is compared. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a48e616fb837ea4a5dbac6b03946dd0a4}{Add\+Children\+Without\+Duplicate}} (List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ first, List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ second)
+\begin{DoxyCompactList}\small\item\em Adds a list of child nodes to a persisting list of child nodes. If a duplicate node is encountered, the degree course values are updated. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} \mbox{\hyperlink{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_aea5b13722428c330125c4183b29f4b0e}{Merge\+Trees}} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} first, \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} second)
+\begin{DoxyCompactList}\small\item\em Merges two trees. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a14f71776edcc7c68bcda855bf637b586}{Calculate\+Result}} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_simple_objects_1_1_result}{Result}} result, List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ nodes)
+\begin{DoxyCompactList}\small\item\em Calculates a {\ttfamily Result} based on a list of nodes. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a2da4a321e4f0a36c415ea8590ecc6172}{Compare\+L2\+Node\+And\+Children}} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} persisting, \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} cmp)
+\begin{DoxyCompactList}\small\item\em Compares two L2 {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} and their children. The branches {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} have to be equal. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_addff4e22307d79538dd114ace85e655c}{Update\+Degree\+Course\+Values}} (\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} persisting, \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} cmp)
+\begin{DoxyCompactList}\small\item\em Iterates over the degree courses and updates to the higher value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_accfd19b38fa887f9721d1c97caf2b6e0}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_accfd19b38fa887f9721d1c97caf2b6e0}} 
+static Random {\bfseries \+\_\+random} = new()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains static methods to evaluate and compare a tree. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a48e616fb837ea4a5dbac6b03946dd0a4}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a48e616fb837ea4a5dbac6b03946dd0a4}} 
+\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}!AddChildrenWithoutDuplicate@{AddChildrenWithoutDuplicate}}
+\index{AddChildrenWithoutDuplicate@{AddChildrenWithoutDuplicate}!StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+\doxysubsubsection{\texorpdfstring{AddChildrenWithoutDuplicate()}{AddChildrenWithoutDuplicate()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$ Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils.\+Add\+Children\+Without\+Duplicate (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$}]{first,  }\item[{List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a list of child nodes to a persisting list of child nodes. If a duplicate node is encountered, the degree course values are updated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & \\
+\hline
+{\em second} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a14f71776edcc7c68bcda855bf637b586}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a14f71776edcc7c68bcda855bf637b586}} 
+\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}!CalculateResult@{CalculateResult}}
+\index{CalculateResult@{CalculateResult}!StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+\doxysubsubsection{\texorpdfstring{CalculateResult()}{CalculateResult()}}
+{\footnotesize\ttfamily static void Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils.\+Calculate\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_simple_objects_1_1_result}{Result}}}]{result,  }\item[{List$<$ \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}} $>$}]{nodes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Calculates a {\ttfamily Result} based on a list of nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The {\ttfamily Result} to update\\
+\hline
+{\em nodes} & A list of {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}s\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_aeb4784e54c5f307892f0ded30c8c8fa7}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_aeb4784e54c5f307892f0ded30c8c8fa7}} 
+\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}!CompareBranchesAndUpdateValues@{CompareBranchesAndUpdateValues}}
+\index{CompareBranchesAndUpdateValues@{CompareBranchesAndUpdateValues}!StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+\doxysubsubsection{\texorpdfstring{CompareBranchesAndUpdateValues()}{CompareBranchesAndUpdateValues()}}
+{\footnotesize\ttfamily static void Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils.\+Compare\+Branches\+And\+Update\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{persisting,  }\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{cmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compares two existing branches to each other. The branches names have to be equal. The full branch, from L1 over L2 to L3 is compared. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em persisting} & The L1 {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} containing the branch that should be kept\\
+\hline
+{\em cmp} & The L1 {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} containing the branch that should be compared\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a2da4a321e4f0a36c415ea8590ecc6172}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a2da4a321e4f0a36c415ea8590ecc6172}} 
+\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}!CompareL2NodeAndChildren@{CompareL2NodeAndChildren}}
+\index{CompareL2NodeAndChildren@{CompareL2NodeAndChildren}!StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+\doxysubsubsection{\texorpdfstring{CompareL2NodeAndChildren()}{CompareL2NodeAndChildren()}}
+{\footnotesize\ttfamily static void Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils.\+Compare\+L2\+Node\+And\+Children (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{persisting,  }\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{cmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Compares two L2 {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} and their children. The branches {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} have to be equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em persisting} & The persisting L2 node\\
+\hline
+{\em cmp} & The node to compare with\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a7786407efe199d2fc5fa9ed98e82e9e8}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a7786407efe199d2fc5fa9ed98e82e9e8}} 
+\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}!CompareTreesAndUpdateValues@{CompareTreesAndUpdateValues}}
+\index{CompareTreesAndUpdateValues@{CompareTreesAndUpdateValues}!StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+\doxysubsubsection{\texorpdfstring{CompareTreesAndUpdateValues()}{CompareTreesAndUpdateValues()}}
+{\footnotesize\ttfamily static void Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils.\+Compare\+Trees\+And\+Update\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}]{pers\+Tree,  }\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}]{cmp\+Tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compares two existing trees to each other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pers\+Tree} & persisting tree\\
+\hline
+{\em cmp\+Tree} & compare tree\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a56d6b4d0299cf2b947d9fb811bca145c}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a56d6b4d0299cf2b947d9fb811bca145c}} 
+\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}!EvaluateTree@{EvaluateTree}}
+\index{EvaluateTree@{EvaluateTree}!StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+\doxysubsubsection{\texorpdfstring{EvaluateTree()}{EvaluateTree()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_study_con_1_1_source_1_1_simple_objects_1_1_result}{Result}} Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils.\+Evaluate\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Evaluates a tree and returns a result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}} to evaluate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result containing degree courses and corresponding final values
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a6823ba6ef1d261da8dd5cf2050d2c35e}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_a6823ba6ef1d261da8dd5cf2050d2c35e}} 
+\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}!GenerateId@{GenerateId}}
+\index{GenerateId@{GenerateId}!StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+\doxysubsubsection{\texorpdfstring{GenerateId()}{GenerateId()}}
+{\footnotesize\ttfamily static string Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils.\+Generate\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates an ID consisting of 6 characters and or numbers 
+
+\begin{DoxyReturn}{Returns}
+An ID string
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_aea5b13722428c330125c4183b29f4b0e}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_aea5b13722428c330125c4183b29f4b0e}} 
+\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}!MergeTrees@{MergeTrees}}
+\index{MergeTrees@{MergeTrees}!StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+\doxysubsubsection{\texorpdfstring{MergeTrees()}{MergeTrees()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}} Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils.\+Merge\+Trees (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}]{first,  }\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_tree}{Study\+Con\+Tree}}}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Merges two trees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & first tree to merge\\
+\hline
+{\em second} & second tree to merge\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A merged tree without duplicate nodes
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_addff4e22307d79538dd114ace85e655c}\label{class_study_con_1_1_source_1_1_utils_1_1_evaluation_utils_addff4e22307d79538dd114ace85e655c}} 
+\index{StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}!UpdateDegreeCourseValues@{UpdateDegreeCourseValues}}
+\index{UpdateDegreeCourseValues@{UpdateDegreeCourseValues}!StudyCon.Source.Utils.EvaluationUtils@{StudyCon.Source.Utils.EvaluationUtils}}
+\doxysubsubsection{\texorpdfstring{UpdateDegreeCourseValues()}{UpdateDegreeCourseValues()}}
+{\footnotesize\ttfamily static void Study\+Con.\+Source.\+Utils.\+Evaluation\+Utils.\+Update\+Degree\+Course\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{persisting,  }\item[{\mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}]{cmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Iterates over the degree courses and updates to the higher value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em persisting} & The persisting {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}}\\
+\hline
+{\em cmp} & The {\ttfamily \mbox{\hyperlink{class_study_con_1_1_source_1_1_study_con_node}{Study\+Con\+Node}}} to compare values with\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/mgirk/\+One\+Drive/\+Dokumente/\+Hagenberg/\+Semester\+\_\+4/\+PRO/p05/\+Implementation/\+Tree/\+Study\+Con\+\_\+\+Repo/\+Study\+Con/\+Source/\+Utils/Evaluation\+Utils.\+cs\end{DoxyCompactItemize}
